@@ -1,0 +1,136 @@
+hello git!
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KY UNIVERSITY</title>
+    <style type="text/css">
+        body {
+            color: white;
+            background-color: rgb(42, 42, 95);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .nav-container {
+            width: 100%;
+            padding: 10px 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            padding-right: 20px;
+        }
+        
+        .main-nav {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
+        
+        .logo {
+            width: 200px;
+            margin-right: auto;
+        }
+        
+        .main-nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            padding: 5px 10px;
+        }
+        
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        
+        .content-section {
+            background-image: url('images/2.jpg');
+            background-size: cover;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h1, h2 {
+            margin: 20px 0;
+        }
+        
+        p, ul {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        
+        ul {
+            padding-left: 40px;
+        }
+        
+        b {
+            font-weight: bold;
+        }
+        h3:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="">colleges</a>
+            <a href="">e-learning</a>
+            <a href="">library</a>
+        </div>
+    </div>
+    
+    <div class="main-nav">
+        <img src="images/logo.jpg" class="logo" alt="KY University Logo">
+        <div class="main-nav-links">
+            <a href="index.html">HOME</a>
+            <a href="home.html">ABOUT US</a>
+            <a href="admission.html">ADMISSION</a>
+            <a href="academics.html">ACADEMICS</a>
+            <a href="contact us.html">CONTACT US</a>
+        </div>
+    </div>
+    
+    <video src="video/vid1.mp4" autoplay muted loop>
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="content-section">
+        <h1>Welcome at KY University</h1>
+        <p><b>At KY University, we are committed to academic excellence, innovation, and personal growth. Our diverse community of students and faculty fosters creativity, leadership, and a passion for lifelong learning.
+            <br> Whether you're here to expand your knowledge, develop new skills, or build lasting connections, KY University provides the perfect environment for success.
+            <br> Join us on a journey of discovery and achievement!</b></p>
+        
+        <h2>OUR VISION</h2>
+        <p><b>To be a globally recognized institution of excellence in education, research, and innovation, <br>
+            empowering students to create a sustainable and prosperous future.</b></p>
+        
+        <h2>OUR MISSION</h2>
+        <p><b>Our mission is to provide high-quality education, foster critical thinking, and promote research-driven solutions to global challenges. We are committed to:</b></p>
+        <ul type="circle">
+            <li>Delivering cutting-edge knowledge and practical skills to students.</li>
+            <li>Encouraging innovation and entrepreneurship for societal impact.</li>
+            <li>Cultivating a diverse and inclusive academic environment.</li>
+            <li>Partnering with industries and communities to drive economic and social development.</li>
+        </ul>
+        <a href="KY University Website Documentation.pdf" > <h3>Click here for our documentation </h3></a>
+    </div>
+  
+</body>
+</html>
