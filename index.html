@@ -1,0 +1,577 @@
+hello git!
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fewo-direkt.de/</title>
+    <style type="text/css">
+        html, body {
+            overflow-x: hidden;
+        }
+        body {
+            color: white;
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navlink{
+         /* position: relative; */ 
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 30px;
+          background: rgba(255,255,255,0.7);
+        }
+        .navlink .logo {
+          flex: 0 0 auto;
+        }
+        .navlink .nav-links {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+        }
+        .navlink .nav-links a {
+          color: #111;
+          text-decoration: none;
+          transition: color 0.2s, background 0.2s;
+        }
+        .navlink .nav-links a:hover {
+          color: #1a25c3;
+        }
+        .navlink .download-box {
+          background: #fefdfd;
+          color: #111;
+          padding: 8px 18px;
+          border-radius: 20px;
+          
+          margin-right: 20px;
+          text-decoration: none;
+          transition: color 0.2s, background 0.2s;
+        }
+        .navlink .download-box:hover {
+          background: #f1f1f3;
+          color: #1a25c3;
+        }
+        .a{
+             
+     background-image: url(https://images.pexels.com/photos/32740091/pexels-photo-32740091.jpeg);
+     background-size: cover;
+ background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  text-align:center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-direction: column; 
+
+ 
+        }
+       /* .a form{
+            margin: auto;
+            border: 0cap;
+            display: inline;
+
+        }*/
+        .a h1{
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+
+        }
+       .form-box {
+  background-color: rgba(255, 255, 255, 0.9); /* white with a bit of transparency */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: inline-block;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-box form input[type="text"],
+.form-box form input[type="date"],
+.form-box form input[type="submit"] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-box form input[type="submit"] {
+  background-color: #1a25c3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+}
+
+.form-box form input[type="submit"]:hover {
+  background-color: hsl(259, 93%, 33%);
+}
+.b{
+    background: #051465;
+          color: #f8f6f6;
+          padding: 24px 18px 18px 18px;
+          border-radius: 20px;
+          font-weight: bold;
+          margin-right: 20px;
+          margin-bottom: 30px;
+          min-height: 80px;
+          position: relative;
+}
+.b a, .b button {
+          background-color: #1a25c3;
+          color: #fff;
+          border: none;
+          border-radius: 20px;
+          padding: 8px 22px;
+          font-weight: bold;
+          cursor: pointer;
+          margin-left: auto;
+          margin-right: 0;
+          display: block;
+          width: fit-content;
+          transition: background 0.2s;
+          position: absolute;
+          top: 10px;
+          right: 30px;
+          text-decoration: none;
+        }
+        .b a:hover, .b button:hover {
+          background-color: #0d155a;
+        }
+ /*.nav-container{
+ background: #475bcd;
+          color: #f8f6f6;
+          padding: 8px 18px;
+          border-radius: 20px;
+          font-weight: bold;
+          margin-right: 20px;
+          text-decoration: none;
+          transition: color 0.2s, background 0.2s;
+          flex-direction: column;
+          display: flex;
+ } */
+ .nav-container-row {
+          display: flex;
+          flex-direction: row;
+          gap: 30px;
+          margin: 30px 0;
+        }
+ .nav-container {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          background: #475bcd;
+          color: #f8f6f6;
+          border-radius: 20px;
+        
+          min-width: 260px;
+          max-width: 420px;
+          max-height: 100px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.08);
+        }
+ .nav-container img {
+          max-width: 300px;
+          min-width: 180px;
+          max-height: 100px;
+          border-radius: 20px;
+     /*     margin-left:auto;*/
+        }
+ .nav-container .text {
+          text-align: left;
+          color: #f1f1f3;
+          flex: 1;
+        }
+ .block-row {
+          display: flex;
+          flex-direction: row;
+          gap: 30px;
+          margin: 30px 0;
+        }
+        .block {
+          background: none;
+          color: #ffffff;
+          border-radius: 16px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.08);
+          min-width: 240px;
+          max-width: 300px;
+          min-height: 300px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+          overflow: hidden;
+        }
+        .block img {
+          height: 220px;
+        }
+        .block .text {
+          margin: 0;
+          font-weight: bold;
+          width: 100%;
+          text-align:left;
+          padding: 12px 0 10px 0;
+          border-radius: 0 0 16px 16px;
+          position: relative;
+          bottom: -250px;
+        }
+        .block2-row {
+          display: flex;
+          flex-direction: row;
+          gap: 30px;
+          margin: 30px 0;
+        }
+ .block2 {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          background: #f7f8fb;
+          color: #f8f6f6;
+          border-radius: 20px;
+        
+          min-width: 260px;
+          max-width: 520px;
+          max-height: 300px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.08);
+        }
+ .block2 img {
+          max-width:fit-content; 
+          min-width: 260px;
+          max-height: 150px;
+          border-radius: 20px;
+     /*     margin-left:auto;*/
+        }
+ .block2 .text {
+          text-align: left;
+          color: #18181a;
+          flex: 1;
+        }
+        .d{
+            background-image: url(https://images.pexels.com/photos/269110/pexels-photo-269110.jpeg);
+       background-size: cover;
+ background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  text-align:center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-direction: column; 
+        }
+        .d {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.d .info-box {
+    background: #fff;
+    color: #111;
+    border-radius: 16px;
+    padding: 32px 28px 24px 28px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.10);
+    max-width: 400px;
+    min-width: 260px;
+    margin-left: 0;
+    margin-right: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.d .info-box h3, .d .info-box h5 {
+    color: #111;
+    margin: 0 0 12px 0;
+    text-align: left;
+}
+
+.d .info-box button {
+    background: #1a25c3;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 32px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 18px;
+    font-size: 1rem;
+    align-self: stretch;
+    transition: background 0.2s;
+}
+
+.d .info-box button:hover {
+    background: #0d155a;
+}
+        @media (max-width: 1200px) {
+  .nav-container-row, .block-row, .block2-row {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .nav-container, .block, .block2 {
+    min-width: 180px;
+    max-width: 100%;
+  }
+  .d .info-box {
+    max-width: 90vw;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .navlink {
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 10px;
+  }
+  .nav-container-row, .block-row, .block2-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .nav-container, .block, .block2 {
+    width: 90vw;
+    min-width: unset;
+    max-width: 100%;
+  }
+  .d {
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .d .info-box {
+    margin: 0 0 30px 0;
+    max-width: 95vw;
+  }
+}
+@media (max-width: 600px) {
+  .navlink {
+    flex-direction: column;
+    padding: 6px 2vw;
+    gap: 6px;
+  }
+  .navlink .nav-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .form-box form {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .form-box form input[type="text"],
+  .form-box form input[type="date"],
+  .form-box form input[type="submit"] {
+    width: 90vw;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .d {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    min-height: 350px;
+  }
+  .d .info-box {
+    margin: 18px 0 0 0;
+    padding: 18px 8vw 18px 8vw;
+    max-width: 98vw;
+  }
+  .block, .block2, .nav-container {
+    width: 98vw;
+    min-width: unset;
+    max-width: 100%;
+  }
+  .block img, .block2 img, .nav-container img {
+    max-width: 100vw;
+    min-width: 0;
+    height: auto;
+  }
+}
+        </style>
+</head>
+<body>
+
+   
+    <div class="navlink">
+      <div class="logo">
+        <a href="https://www.fewo-direkt.de/_dms/header/logo.svg?locale=de_DE&siteid=9003020&2&6f9ec7db">
+          <img src="https://www.fewo-direkt.de/_dms/header/logo.svg?locale=de_DE&siteid=9003020&2&6f9ec7db" width="100" height="50">
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="#" class="download-box">download the app</a>
+        <a href="#">Travel planner</a>
+        <a href="#">Register accommodation</a>
+        <a href="#">help</a>
+        <a href="#">My travels</a>
+        <a href="#">Register</a>
+      </div>
+    </div>
+    <div class="a">
+  <h1>The whole accommodation just for you</h1>
+  
+  <div class="form-box">
+    <form action="submit" method="post" style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+      <input type="text" name="address" placeholder="Where should we go?">
+      <input type="date" name="date">
+      <input type="text" name="people" placeholder="2 travelers">
+      <input type="submit" value="Seek">
+    </form>
+  </div>
+</div>
+<br>
+    <div class="b">
+        <h4>
+            Sign in to send a message to the host and get more detail about a listing.
+        </h4>
+        <a href="" class="register-btn">Register</a>
+    </div>
+    <br>
+<div class="nav-container-row">
+      <div class="nav-container">
+        <img src="https://images.pexels.com/photos/976906/pexels-photo-976906.jpeg">
+        <div class="text">
+          <h5> prices without surprises: The displayed price already includes </h5>
+          <h5> book now -> </h5>
+        </div>
+      </div>
+      <div class="nav-container">
+        <img src="https://images.pexels.com/photos/29658688/pexels-photo-29658688.jpeg">
+        <div class="text">
+          <h5> save over $80 on last minute breaks </h5>
+          <h5> book now -></h5>
+        </div>
+      </div>
+      <div class="nav-container">
+        <img src="https://images.pexels.com/photos/1170650/pexels-photo-1170650.jpeg">
+        <div class="text">
+          <h5> A weekend can be full of holiday memories  </h5>
+          <h5>book now -></h5>
+        </div>
+      </div>
+    </div>  
+
+<p><h2 style="color: black;">Find accommodation to suit your taste</h2></p>
+<div class="block-row">
+      <div class="block" style="background-image:url('https://images.pexels.com/photos/210474/pexels-photo-210474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size:cover; background-position:center;">
+        <div class="text">holiday home</div>
+      </div>
+      <div class="block" style="background-image:url('https://images.pexels.com/photos/12842362/pexels-photo-12842362.jpeg'); background-size:cover; background-position:center;">
+        <div class="text">Holiday apartment</div>
+      </div>
+      <div class="block" style="background-image:url('https://images.pexels.com/photos/29763270/pexels-photo-29763270.jpeg'); background-size:cover; background-position:center;">
+        <div class="text">Holiday cottage</div>
+      </div>
+      <div class="block" style="background-image:url('https://images.pexels.com/photos/32683871/pexels-photo-32683871.jpeg'); background-size:cover; background-position:center;">
+        <div class="text">country house</div>
+      </div>
+      <div class="block" style="background-image:url('https://images.pexels.com/photos/129112/pexels-photo-129112.jpeg'); background-size:cover; background-position:center;">
+        <div class="text">villa</div>
+      </div>
+    </div>
+<h2 style="color: black;"> Browse weekend trips </h2>
+<p style="color: black;"> offers for the period:<b> Aug 1-Aug 3</b></p><br>
+<div class="block2-row">
+<div class="block2"><a href=" ">
+    <img src="https://images.pexels.com/photos/140019/pexels-photo-140019.jpeg">
+    <div class="text"> Family-friendly with terrace, large garden with playground equipment and barrel sauna
+Monschau, North Rhine-Westphalia
+
+The price is 861 €.
+861 €
+431 € per night
+incl. taxes & fees
+</div></a>
+</div>
+<div class="block2"><a href=" ">
+    <img src="https://images.pexels.com/photos/8143668/pexels-photo-8143668.jpeg">
+    <div class="text"> Family-friendly with terrace, large garden with playground equipment and barrel sauna
+Monschau, North Rhine-Westphalia
+
+The price is 861 €.
+861 €
+431 € per night
+incl. taxes & fees
+</div></a>
+</div>
+<div class="block2"><a href=" ">
+    <img src="https://images.pexels.com/photos/8143671/pexels-photo-8143671.jpeg">
+    <div class="text"> Family-friendly with terrace, large garden with playground equipment and barrel sauna
+Monschau, North Rhine-Westphalia
+
+The price is 861 €.
+861 €
+431 € per night
+incl. taxes & fees
+</div></a>
+</div>
+<div class="block2"><a href=" ">
+    <img src="https://images.pexels.com/photos/4946621/pexels-photo-4946621.jpeg">
+    <div class="text"> Family-friendly with terrace, large garden with playground equipment and barrel sauna
+Monschau, North Rhine-Westphalia
+
+The price is 861 €.
+861 €
+431 € per night
+incl. taxes & fees
+</div></a>
+</div></div>
+<div class="block-row">
+    <div class="block">
+        <div class="text"> Near the beach</div>
+        <a href="">
+            <img src="https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg" alt="">
+        </a>
+    </div>
+    <div class="block">
+        <div class="text"> Pets welcome</div>
+        <a href="">
+            <img src="https://images.pexels.com/photos/30781823/pexels-photo-30781823.jpeg" alt="">
+        </a>
+    </div>
+    <div class="block">
+        <div class="text"> pools</div>
+        <a href="">
+            <img src="https://images.pexels.com/photos/8143683/pexels-photo-8143683.jpeg" alt="">
+        </a>
+    </div>
+    <div class="block">
+        <div class="text"> More than three bedrooms</div>
+        <a href="">
+            <img src="https://images.pexels.com/photos/11697041/pexels-photo-11697041.jpeg" alt="">
+        </a>
+    </div>
+</div>
+<div class="c" >
+    <div class="d">
+        <div class="info-box">
+            <h3>Rent your accommodation with confidence with FeWo-direkt</h3>
+            <h5>Real-time support, quick and easy registration, and guests with positive feedback – with FeWo-direkt, hosting feels like a vacation.</h5>
+            <button>advertise accomodation</button>
+        </div>
+    </div>
+</div>
+<h2>Was ist FeWo-direkt?</h2><br>
+<p>FeWo-direkt ist dein kompetenter Ansprechpartner für Urlaub in einem Ferienhaus oder einer Ferienwohnung. Als Teil von Vrbo, einem der führenden Online-Marktplätze für Ferienhausvermietungen, bietet dir FeWo-direkt mehr als zwei Millionen einzigartige Unterkünfte, darunter Fincas, Bungalows, Apartments, Ferienhütten und sogar Villen. Sichere Zahlungen, Unterstützung rund um die Uhr und die Mit-Vertrauen-Buchen-Garantie machen Buchungen zum Kinderspiel. Über die benutzerfreundliche Website und zahlreiche praktische Filter kannst du ohne großen Aufwand deine Traumferienwohnung für dein Budget finden. So verbringst du ganz bestimmt einen unvergesslichen Urlaub,
+     der sich von der Suche über die Buchung bis hin zu Aufenthalt und Abreise ganz stressfrei gestaltet.</p>
+     <h2>
+        Ferienwohnung oder Ferienhaus mieten: Das sind die Vorteile
+     </h2>
+     
+        <p>Besonders Familien und Gruppen wissen die Vorteile von Ferienunterkünften zu schätzen: mehr Platz, mehr Privatsphäre, mehr Annehmlichkeiten. Du hast mehr Flexibilität und Freiheit in deinen eigenen vier Wänden als in herkömmlichen Hotels und kannst deinen Urlaub frei planen – unabhängig davon, ob du eine Städtereise machen oder mit deinem Hund inmitten der malerischen Natur abschalten möchtest. Du suchst eine gemütliche Ferienhütte in den Bergen mit Waschmaschine und Whirlpool? Ein Strandhaus am Wasser oder eine große Finca im Süden mit Pool und voll ausgestatteter Küche? Kein Problem, denn Ferienunterkünfte gibt es in allen Größen und mit jeder Wunschausstattung, die dir für deinen nächsten Familienurlaub,
+             Abenteuertrip mit Freunden oder ein romantisches Wochenende vorschwebt.</p>
+             <h2>More holiday ideas</h2>
+             <img src="New folder\FOOTER.png" alt="footer" width="100%">
+</body>
+
+</html>
